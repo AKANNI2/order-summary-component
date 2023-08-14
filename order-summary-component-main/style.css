@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+  margin: 10rem 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  width: 34rem;
+  box-shadow: 0 0 4.8rem 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-img-box {
+  background-image: url(images/illustration-hero.svg);
+  background-size: cover;
+  background-position: center;
+  height: 16rem;
+}
+
+.card-textbox {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-heading {
+  text-align: center;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 2.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.text-description {
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 1.8rem;
+}
+
+.product {
+  background-color: hsl(225, 100%, 94%, 0.2);
+  padding: 1.2rem;
+  width: 100%;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.product-description {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.plan {
+  color: hsl(223, 47%, 23%);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-change:link,
+.plan-change:visited {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: hsl(245, 95%, 48%);
+  transition: all ease 0.3s;
+}
+
+.plan-change:hover,
+.plan-change:active {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+.btn:link,
+.btn:visited {
+  background-color: hsl(245, 95%, 48%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  padding: 1.2rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 1rem 2rem 0.5rem hsla(224, 23%, 55%, 0.2);
+  transition: all ease 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(224, 23%, 55%);
+}
+
+.btn-link:link,
+.btn-link:visited {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.btn-link:hover,
+.btn-link:active {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Below 350px */
+
+@media (max-width: 23em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container {
+    margin: 5rem 0;
+  }
+}
